@@ -12,7 +12,7 @@ namespace Calculator_Unit_Test
 
             if (result != 4)
             {
-                throw new Exception();
+                throw new Exception($"The Sum(2, 2) was expected to be 4 but it's {result}.");
             }
         }
     }
