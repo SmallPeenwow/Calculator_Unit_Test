@@ -5,7 +5,15 @@ namespace Calculator_Unit_Test
         [Fact]
         public void Test1()
         {
+            if (Sum(2, 2) != 4)
+            {
+                throw new Exception();
+            }
+        }
 
+        int Sum(int left, int right)
+        {
+            return left + right;
         }
     }
 }
