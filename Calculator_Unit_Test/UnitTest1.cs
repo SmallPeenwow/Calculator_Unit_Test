@@ -5,16 +5,15 @@ namespace Calculator_Unit_Test
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void Sum_of_2_and_2_should_be_4()
         {
-            var calculator = new Calculator();
+            var calculator  = new Calculator();
+            var result = calculator.Sum(2, 2);
 
-            if (calculator.Sum(2, 2) != 4)
+            if (result != 4)
             {
                 throw new Exception();
             }
         }
-
-       
     }
 }
